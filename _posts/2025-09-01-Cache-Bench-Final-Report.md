@@ -52,19 +52,19 @@ The public-only picture is more nuanced than the original mixed report.
 
 Figure 1 shows the three most useful leaderboard-style metrics side by side after removing the internal method. `ARC` leads on overall absolute miss ratio, while `ThreeLCache` leads on improvement over FIFO across all three cache ratios.
 
-![CacheBench overview heatmaps](figures/cachebench_overview_heatmaps.png)
+![CacheBench overview heatmaps]({{ '/images/cachebench/cachebench_overview_heatmaps.png' | relative_url }})
 
 Figure 2 answers a different question: how often is an algorithm actually the best choice for a workload? Ties are common enough that they must be handled explicitly even after removing `S4FIFO`. The tied-best rate is about `9.6%` of traces at `0.001`, `5.7%` at `0.01`, and `5.1%` at `0.1`.
 
-![Tie-shared best-on-trace share](figures/cachebench_best_trace_share.png)
+![Tie-shared best-on-trace share]({{ '/images/cachebench/cachebench_best_trace_share.png' | relative_url }})
 
 Figure 3 highlights per-trace variability for the leading public algorithms. The median gains stay positive across all six plotted methods, but the spread is widest at the smallest cache ratio, where workload sensitivity is highest.
 
-![Per-trace improvement distribution](figures/cachebench_top_algorithm_distribution.png)
+![Per-trace improvement distribution]({{ '/images/cachebench/cachebench_top_algorithm_distribution.png' | relative_url }})
 
 Figure 4 is the robustness check. This plot matters because best-share or average improvement alone can hide pathological failures. `ThreeLCache` and `LRB` remain stable with only `27` and `20` near-total-miss runs, while `WTinyLFU` and `S3FIFO` fail on a substantial fraction of runs.
 
-![Near-total-miss robustness check](figures/cachebench_near_total_miss_rates.png)
+![Near-total-miss robustness check]({{ '/images/cachebench/cachebench_near_total_miss_rates.png' | relative_url }})
 
 ## Interpretation
 
