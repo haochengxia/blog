@@ -3,15 +3,15 @@
 
   {% include head.html %}
 
-    <body>
+    <body class="{% if page.layout %}layout-{{ page.layout }}{% else %}layout-default{% endif %}{% if page.url == '/' %} is-home{% endif %}">
 
     {% include header.html %}
 
-    <div class="page-content" id="main">
+    <main class="page-content" id="main">
       <div class="wrap main-content">
       {{ content }}
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
     

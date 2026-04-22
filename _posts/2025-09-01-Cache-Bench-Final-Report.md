@@ -14,7 +14,6 @@ categories: jekyll update
 
 - [libCacheSim-python](https://github.com/cacheMon/libCacheSim-python) provides Python bindings for libCacheSim, including ratio-based cache sizing, fast simulation, and plugin-based prototyping.
 - [cache_dataset](https://github.com/cacheMon/cache_dataset) provides the open trace corpus and tutorials used to reproduce simulations on OracleGeneral-formatted traces.
-- [generate_cachebench_report_assets.py](generate_cachebench_report_assets.py) in this repository regenerates the figures and summary CSV files used by this report.
 
 ## Experimental slice
 
